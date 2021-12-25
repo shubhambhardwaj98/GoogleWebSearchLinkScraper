@@ -10,7 +10,7 @@ linkList = []
 for item in itemsList:
     params = {
         "q": item,
-        "api_key" : 'E5197A3C2E8B44348BD4379C91FC4273',
+        "api_key" : '',
         'page': '1',
         'num': '1'
     }

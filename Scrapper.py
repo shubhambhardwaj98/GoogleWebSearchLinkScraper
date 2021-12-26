@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 import json
 import csv
-items = pd.read_csv('asd.csv')          #read names from the fil
+items = pd.read_csv('ListofItems.csv')          #read names from the fil
 items.columns = ['Medicine Name']
 itemsList = items['Medicine Name'].tolist()        
 linkList = []
@@ -25,7 +25,7 @@ for item in itemsList:
         linkList.append('NULL')
 print(linkList)
 fields = ['1mglinks']
-with open('abc.csv', 'w') as f:
+with open('abc.csv','w',newline='') as f:
       
     # using csv.writer method from CSV package
     write = csv.writer(f)
